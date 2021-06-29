@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Vite App</title>
+  </head>
+  <style>
+    .game {
+      top: 100px;
+      margin: auto;
+      max-width: 600px;
+      position: relative;
+      font-family: 'Della Respira', serif;
+    }
+    /* .grid {
+      } */
+    .actor {
+      top: 0px;
+      left: 0px;
+      position: absolute;
+    }
+
+    .snake {
+      background: green;
+      z-index: 1;
+    }
+    .food {
+      background: red;
+      z-index: 0;
+    }
+
+    .gameover {
+      background: slategrey;
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      visibility: hidden;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+    }
+
+    .gameover.active {
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.5s ease-in-out;
+    }
+    .gameover h1 {
+      font-size: 50px;
+    }
+  </style>
+  <body>
+    <div class="game"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
