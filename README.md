@@ -6,5 +6,7 @@ Play at:
 https://replit.com/@Darketes/snake-js
 
 or local:
+
 npm install
+
 npm run dev
